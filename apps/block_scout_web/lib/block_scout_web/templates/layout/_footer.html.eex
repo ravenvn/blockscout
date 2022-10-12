@@ -27,6 +27,9 @@
           <a href="https://t.me/BabyDogeChainOfficial/" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Telegram") %>'>
             <div class="footer-social-icon-container fontawesome-icon telegram"></div>
           </a>
+          <a href="https://discord.com/invite/cxKWAYzFjT/" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Telegram") %>'>
+            <div class="footer-social-icon-container fontawesome-icon discord"></div>
+          </a>
         </div>
       </div>
 
@@ -69,12 +72,5 @@
     </div>
 
     <% version = version() %>
-
-    <%= unless ignore_version?(version) do %>
-      <% release_link = release_link(version) %>
-      <div>
-        <%= gettext("Version") %>: <%= release_link %>
-      </div>
-    <% end %>
   </div>
 </footer>
